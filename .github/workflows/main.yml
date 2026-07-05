@@ -1,0 +1,13 @@
+name: Read File Manaully
+on: 
+  workflow_dispatch:
+jobs:
+  read-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check repository
+        uses: actions/checkout@v4
+
+      - name : Read app.txt file
+        run: cat app.txt 
